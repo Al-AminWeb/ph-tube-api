@@ -2,14 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .active {
+            background: red;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-<h1 class="">hello</h1>
+<header>
+    <nav class="w-11/12 mx-auto flex justify-between items-center  border-b-2 border-[#17171720]  py-5">
+
+        <div class="w-[120px]"><img alt="" src="images/Logo.png"></div>
+        <div class="btn">
+            <button>Short</button>
+        </div>
+        <div  class="btn bg-[#FF1F3D] text-white">
+            <button>BLog</button>
+        </div>
+    </nav>
+
+    <nav class="flex py-5 justify-center gap-5" id="category-button">
+        <button id="btn-all" onclick="loadVideos()" class="btn btn-sm " >All</button>
+    </nav>
+</header>
+
+<main>
+    <section class="w-11/12 mx-auto grid grid-cols-4 gap-4" id="video-container">
+
+
+    </section>
+    
+</main>
+
+<script src="index.js"></script>
 </body>
 </html>
